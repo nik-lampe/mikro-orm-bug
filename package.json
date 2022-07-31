@@ -1,0 +1,33 @@
+{
+  "name": "mikro-orm-bug",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "NODE_ENV=development ts-node ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-yoga/node": "^2.13.5",
+    "@mikro-orm/core": "^5.2.4",
+    "@mikro-orm/sql-highlighter": "^1.0.1",
+    "@mikro-orm/sqlite": "^5.2.4",
+    "apollo-server": "^3.10.0",
+    "class-validator": "^0.13.2",
+    "graphql": "^15.8.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^5.2.4",
+    "@mikro-orm/seeder": "^5.2.4",
+    "ts-node": "^10.9.1"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
+}
